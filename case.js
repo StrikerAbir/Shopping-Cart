@@ -12,10 +12,12 @@
 
 document.getElementById('btn-case-plus').addEventListener('click', function () {
     const newCaseNumber = updateCaseNumber(true,'case-number-field');
-    singleProductTotalPrice(59,newCaseNumber,'casePriceField');
+    singleProductTotalPrice(59, newCaseNumber, 'casePriceField');
+    SubtotalTaxTotal()
 })
 
 document.getElementById('btn-case-minus').addEventListener('click', function () {
     const newCaseNumber = updateCaseNumber(false,'case-number-field');
     singleProductTotalPrice(59, newCaseNumber, 'casePriceField');
+    SubtotalTaxTotal()
 })
